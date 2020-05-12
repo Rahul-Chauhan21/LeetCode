@@ -39,6 +39,7 @@ class Solution {
         dfs(image,sr,sc+1,newColor,rows,cols,source);
     }
 public:
+    //O(M*N)
     vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int newColor) {
         if(newColor == image[sr][sc])
             return image;
