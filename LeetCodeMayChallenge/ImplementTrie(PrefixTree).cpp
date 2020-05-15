@@ -42,7 +42,7 @@ public:
     }
     //O(Length of longest String)* Number of Queries Q
     /** Inserts a word into the trie. */
-    void insert(string word) { // O(L) L is the length of longest string inserted
+    void insert(string word) { // O(L) L is the length of longest string inserted * Queries
         TrieNode* node = this->root;
             for(int i = 0; i < word.length(); i++){
                 char letter = word[i];
@@ -67,7 +67,7 @@ public:
     }
 
     /** Returns if there is any word in the trie that starts with the given prefix. */
-    bool startsWith(string prefix) {//O(Length of searched string)
+    bool startsWith(string prefix) {//O(Length of searched string) * Queries 
         TrieNode* node = this->root;
             for(char c : prefix){
                 if(node->children[c-'a'] == NULL){
