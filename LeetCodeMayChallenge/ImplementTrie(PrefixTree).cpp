@@ -37,10 +37,10 @@ class Trie {
 public:
     TrieNode* root;
     /** Initialize your data structure here. */
-    Trie() {
+    Trie() { // O(209 bytes) per Node
         this->root = new TrieNode();
     }
-
+    //O(Length of longest String)* Number of Queries Q
     /** Inserts a word into the trie. */
     void insert(string word) { // O(L) L is the length of longest string inserted
         TrieNode* node = this->root;
@@ -55,7 +55,7 @@ public:
     }
 
     /** Returns if the word is in the trie. */
-    bool search(string word) {//O(Length of searched string)
+    bool search(string word) {//O(Length of searched string) * Queries
         TrieNode* node = this->root;
             for(char c : word){
                 if(node->children[c-'a'] == NULL){
