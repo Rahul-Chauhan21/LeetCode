@@ -27,6 +27,12 @@ Note:
     1 <= costs[i][0], costs[i][1] <= 1000
 
 */
+/*
+intuition:
+    Actual cost parameter is how much more we benefit if we chose to go to city A over city B
+    so we sort the array based on the profit margin
+*/
+
 class Solution {
     static bool comparator(vector<int>& a, vector<int>& b){
         return a[1]-a[0] > b[1] - b[0];
