@@ -38,6 +38,7 @@ Note that an empty tree is represented by NULL, therefore you would see the expe
  */
 class Solution {
 public:
+    // O(N) time | O(N) space if tree is a Skewed tree
     TreeNode* searchBST(TreeNode* root, int val) {
         if(root == NULL || root->val == val){
             return root;
