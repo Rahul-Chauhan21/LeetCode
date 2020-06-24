@@ -17,8 +17,8 @@ public:
                     int j = nums[i];
                     while(values.find(j) != values.end()){
                         j++;
-                        maxRes = max(maxRes, j - nums[i]);
                     }
+                    maxRes = max(maxRes, j - nums[i]);
                 }
             }
         return maxRes;
