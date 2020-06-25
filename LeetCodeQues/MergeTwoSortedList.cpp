@@ -20,7 +20,7 @@ Output: 1->1->2->3->4->4
  */
 class Solution {
 public:
-    //O(m + n) time | O(1) space
+    //O(m + n) time | O(m + n) space
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
         ListNode* k = new ListNode(0);
         ListNode* iterator = k;
