@@ -33,6 +33,22 @@ class Solution {
 public:
     //O(n) time | O(1) time
     Node* copyRandomList(Node* head) {
+        /*unordered_map<Node*,Node*> nodes;
+        Node* iterator = head;
+        Node* copyNode = NULL;
+        while(iterator){
+            copyNode = new Node(iterator->val);
+            nodes[iterator] = copyNode;
+            iterator = iterator->next;
+        }
+        iterator = head;
+        while(iterator){
+            copyNode = nodes[iterator];
+            copyNode->next = nodes[iterator->next];
+            copyNode->random = nodes[iterator->random];
+            iterator = iterator->next;
+        }
+        return nodes[head];*/
         if(!head) return head;
         Node* iterator = head;
         while(iterator){
