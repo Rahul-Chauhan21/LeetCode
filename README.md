@@ -1,2 +1,2 @@
 # LeetCode
-Coding Ques on the platform leetcode
+DS problems on LeetCode platform
